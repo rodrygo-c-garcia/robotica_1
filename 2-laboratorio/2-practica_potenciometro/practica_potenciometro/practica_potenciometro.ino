@@ -1,6 +1,6 @@
   // pin analogico
   int pot = 0; // pin analogico del A0
-  // pines PWM  
+  // pines PWM 
   int led1 = 8; // pin digital 10
   int led2 = 9; // pin digital 10
   int led3 = 10; // pin digital 10
@@ -24,5 +24,4 @@
     analogWrite(led1, map(value, 0, 1023, 0, 255)); // indicamos el cambio de rango
     analogWrite(led2, map(value, 0, 1023, 0, 255)); // indicamos el cambio de rango
     analogWrite(led3, map(value, 0, 1023, 0, 255)); // indicamos el cambio de rango
-    delay(100);
 }
