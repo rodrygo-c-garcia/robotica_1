@@ -1,6 +1,6 @@
   // pin analogico
   int pot = 0; // pin analogico del A0
-  // pines PWM 
+  // pines PWM
   int led1 = 8; // pin digital 10
   int led2 = 9; // pin digital 10
   int led3 = 10; // pin digital 10
@@ -9,7 +9,7 @@
   void setup() {
     // put your setup code here, to run once:
     pinMode(pot, INPUT); // pin analogico, se sobreentiende que es entrada siempre
-    
+
     pinMode(led1, OUTPUT); // pin digital, indicamos que es salida
     pinMode(led2, OUTPUT); // pin digital, indicamos que es salida
     pinMode(led3, OUTPUT); // pin digital, indicamos que es salida

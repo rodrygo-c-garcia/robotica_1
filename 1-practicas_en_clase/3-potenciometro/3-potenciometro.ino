@@ -34,7 +34,7 @@
 
     if(value <= 341) {
       brillo1 = map(value, 0, 341, 0, 255);
-      
+      Serial.println(brillo1);
       analogWrite(led1, brillo1); // indicamos el cambio de rango
       analogWrite(led2, 0); // indicamos el cambio de rango
       analogWrite(led3, 0); // indicamos el cambio de 
@@ -49,56 +49,10 @@
     }
     
 
-    if(value >= 341*2 && value <= 1023) {
+    if(value >= 341*2) {
       brillo3 = map(value, (341*2), 1023, 0, 255);
       analogWrite(led1, brillo1); // indicamos el cambio de rango
       analogWrite(led2, brillo2); // indicamos el cambio de rango
       analogWrite(led3, brillo3); // indicamos el cambio de 
     }
 } 
-
-
-
-void bajarBrillo(int value){
-    if(value <= 341) {
-      // mientras no llegue al tope
-      while(true){
-         brillo1 = map(value, 0, 1023, 0, 255);
-    
-        analogWrite(led1, brillo1); // indicamos el cambio de rango
-        analogWrite(led2, 0); // indicamos el cambio de rango
-        analogWrite(led3, 0); // indicamos el cambio de
-
-        if(brillo1 == 255){
-          break;
-        }
-      } 
-    }
-
-    if(value >= 341 && value <= 341*2) {
-      while(true){
-        brillo2 = map(value, 0, 1023, 0, 255);
-        analogWrite(led1, brillo1); // indicamos el cambio de rango
-        analogWrite(led2, brillo2); // indicamos el cambio de rango
-        analogWrite(led3, 0); // indicamos el cambio de
-        
-        if(brillo2 == 255){
-          break;
-        }
-      }
-    }
-
-
-    if(value >= 341*2 && value <= 1023) {
-      while(true){
-        brillo3 = map(value, 0, 1023, 0, 255);
-        analogWrite(led1, brillo1); // indicamos el cambio de rango
-        analogWrite(led2, brillo2); // indicamos el cambio de rango
-        analogWrite(led3, brillo3); // indicamos el cambio de
-
-        if(brillo3 == 255){
-        break;
-        }
-      }
-    }
-}
