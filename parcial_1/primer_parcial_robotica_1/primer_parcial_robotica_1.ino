@@ -15,9 +15,6 @@ int led1 = 8;
 int led2 = 9;
 int led3 = 10;
 
-//variables true o false
-bool prendido = true;
-
 void setup() {
   Serial.begin(9600);
   pinMode(led1,OUTPUT);
@@ -33,7 +30,7 @@ void loop() {
   Serial.print("valor actual del potenciometro es: ");
   Serial.println(valorPotenciometro);
   
-  if(valorPotenciometro==0 or valorPotenciometro==1){//prendido hacia tope derecho
+  if(valorPotenciometro <= 1){//prendido hacia tope derecho
     ctrlSensor();
     digitalWrite(led1, HIGH);
     digitalWrite(led3, LOW);
