@@ -15,3 +15,9 @@ AT+BIND=<addr> --> enlazamos la MAC del Esclavo
 
 Enviamos informacion:
 
+Examen Final:
+# 2 Modulos Yojstick 
+# controlar el carrito desde este modulo, creando un mando cotrol
+# enviar datos al esclavo
+# agregar adornos de lo que queramos
+# diciembre 1 defensa de Robotica
