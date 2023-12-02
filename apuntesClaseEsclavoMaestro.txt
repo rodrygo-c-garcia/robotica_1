@@ -1,0 +1,23 @@
+
+AT+ORLG --> para volver a valores por defecto
+					Apuntes Etical Maestro Esclavo
+MAC De HC-05 MI_MODULE_RODRIGO
+
+MAC: 0022:12:014331 (Mestro)
+
+AT+ROLE? --> para saber si es esclvo o maestro
+AT+ROLE=1 --> para cambiar de Role 0 (Esclavo) 1 (Maestro)
+AT+CMODE? 
+AT+CMODE=0 --> Que se conecte cualquiera siempre que tenga las credenciales
+AT+UART? --> vemos la velocidad de transmision 0,0 bits de paridad (algunos casos 57600,0,0)
+AT+BIND? --> especificamos el dispositivo para enlazar
+AT+BIND=<addr> --> enlazamos la MAC del Esclavo
+
+Enviamos informacion:
+
+Examen Final:
+# 2 Modulos Yojstick 
+# controlar el carrito desde este modulo, creando un mando cotrol
+# enviar datos al esclavo
+# agregar adornos de lo que queramos
+# diciembre 1 defensa de Robotica
